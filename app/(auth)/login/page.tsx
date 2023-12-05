@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import React from "react";
-import GoogleIcon from "../../../public/google.svg";
 import Image from "next/image";
 import GithubSignInButton from "@/app/components/GithubSignInButton";
+import GoogleSignInButton from "@/app/components/GoogleSignInButton";
 
 const Login = () => {
   return (
@@ -35,10 +35,8 @@ const Login = () => {
       </div>
 
       <div className="w-full flex justify-center items-center gap-x-3 mt-6">
-        <GithubSignInButton/>
-        <Button variant="outline" size="icon">
-          <Image src={GoogleIcon} alt="Google Icon" className="w-6 h-6" />
-        </Button>
+        <GithubSignInButton />
+        <GoogleSignInButton />
       </div>
     </div>
   );
