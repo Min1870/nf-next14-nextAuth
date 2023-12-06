@@ -1,8 +1,9 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 const HomePage = () => {
   return (
-    <h1>Hello Authenticated User</h1>
+    <Navbar/>
   )
 }
 
