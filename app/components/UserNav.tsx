@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import {
@@ -10,9 +10,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { signOut } from "next-auth/react";
-import React from "react";
 
-const UserNav = () => {
+const UserNav =  async () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
