@@ -11,7 +11,7 @@ type HomeLayoutProps = {
 const HomeLayout = async ({ children }: HomeLayoutProps) => {
   const session = await getServerSession(authOptions);
 
-  if (!session) {
+  if (session) {
     return redirect("/login");
   }
   return (
